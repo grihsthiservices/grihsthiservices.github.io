@@ -1,0 +1,139 @@
+.second-nav i,
+.top-nav ul li i {
+    font-size: 17px;
+}
+
+.second-nav {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+}
+.second-nav > ul> li {
+    display: inline-block;
+    float: left;
+    width: initial;
+    max-width: initial;
+}
+.second-nav, .second-nav > ul {
+    float: left;
+    width: 100%;
+}
+
+.second-nav > ul> li.dropdown > a{
+    background: #84c225;
+}
+li.dropdown i {
+    float: right;
+    font-size: 24px;
+}
+
+.second-nav li:hover a {
+    text-decoration: none;
+}
+
+.second-nav > ul {
+    float: left;
+    padding:0;
+    margin: 0;
+}
+
+.second-nav > ul > li.dropdown > a {
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 15px 8px 15px;
+}
+
+.second-nav > ul> li:hover > a{
+	background:#72a020;
+	color:#fff;
+}
+
+.second-nav > ul > li{
+	text-align:center;}
+	a.prodadd {
+    text-transform: uppercase;
+}
+/*======================mega menu======================*/
+.second-nav > ul > li {
+    position: relative;
+}
+.fixed ul.submenu1{
+	top:0px;}
+	
+header.header.desktop.fixed .top-nav{
+	display:none;}	
+ul.submenu1 {
+	display:none;
+    width:245px;
+    border-radius: 0;
+    padding: 0;
+    border-bottom: none;
+    background: #fff;
+    min-height: 660px;
+	position: absolute;
+    z-index: 9999;
+    top: 38px;
+    box-shadow: 0 1px 3px #b6b6b6;
+}
+.second-nav > ul > li:hover > ul{
+	display:block;}
+.second-nav> ul ul ul li> ul,
+.second-nav ul ul ul ul li> ul{
+	background:#fff;}	
+.second-nav ul ul ul ul li> ul{
+	 width:374px}	
+.second-nav ul ul li> ul {
+    min-height: 660px;
+    position: absolute;
+    left: 245px;
+    width: 245px;
+    top: 0;
+    background: #eaeaea;
+}
+.second-nav ul ul ul li> ul {
+border-right: 1px dashed #DEDEDE;	
+	}
+ul.submenu1-1-child2 h3 {
+    color: #84c225;
+    font-size: 15px;
+    margin: 0 0 11px 14px;
+}	
+.submenu1-1 .childer-active ul,	
+.second-nav ul ul li.parent-active > ul,
+.second-nav ul ul li.parent-active:hover> ul{
+	display:block;}
+.submenu1-1 ul{
+	display:none;}
+.second-nav ul ul li> ul{
+	display:none;}	
+li.dropdown > ul > li {
+    border-bottom: 1px solid #dedede;
+    float: left;
+    width: 100%;
+}
+li.dropdown ul li > a {
+ padding: 4px 0 6px 15px;
+    font-size: 14px;
+    color: #222;
+    float: left;
+    width: 100%;
+}
+ul.submenu1 li {
+    text-align: left;
+}
+/*======================End Mega Menu======================*/
+input.form-control.usr {
+    text-align: center;
+    font-size: 12px;
+}
+.second-nav > ul> li> a{
+  color: #666;
+    font-size: 14px;
+    padding: 8px 15px;
+    float: left;
+}
+
+.second-nav {
+    margin:0;
+}
+

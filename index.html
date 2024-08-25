@@ -1,99 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Loigin V4</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form" method="POST" action="https://formspree.io/support@grihsthi.com">
-					<span class="login100-form-title">
-						Grihsthi
-						<br>
-					</span>
-					<div class="txt1 text-center p-b-40">
-						<span>
-						Home management is easy.
-						</span>
-					</div>
+<html lang="en">   
+  <head>
+    <!-- Hotjar Tracking Code for desistaple.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1417730,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    <meta charset="utf-8">   
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="icon" href="img/favicon/favicon_2.png">
+    <title>DesiStaple{% block title_section %}{% endblock %} </title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/chat_style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-kit.css">
+    <link rel="stylesheet" href="css/products_dropdown.css">
+    <link rel="stylesheet" href="css/custom_style.css">
 
 
-					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
-						<span class="label-input100">Your Name</span>
-						<input class="input100" type="text" name="username" placeholder="Type your name">
-					</div>
+    <!-- todo(amit): remove unrequired js files -->
+    <script src="js/core/jquery.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/bootstrap-material-design.min.js"></script>
+    <script src="js/plugins/moment.min.js"></script>
+    <script src="js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/plugins/nouislider.min.js"></script>
+    <script src="js/bootstrap-growl.js"></script>
 
-					<div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="email" name="email" placeholder="Type your email">
-					</div>
-					<div class="wrap-input100 m-b-23">
-						<span class="label-input100">Phone</span>
-						<input class="input100" type="prone" name="phone" placeholder="Type your phone">
-					</div>
-					<div class="text-right p-t-8 p-b-31">
-						<a href="#"></a>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Submit
-							</button>
-						</div>
-					</div>
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css?1.1">
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js?1.6"></script>
+        <script src="js/material-kit.min.js"></script>
 
-				</form>
-			</div>
-		</div>
-	</div>
-	
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+  </head>  
+  <style>
+    @font-face {
+      font-family: "Interstate";
+      src: url("/static/new_assets/fonts/Interstate-Light.otf");
+    }
+  </style>
+<body style="font-family: 'Interstate',  Arial, sans-serif;font-weight:300;background-color: #F8F9FA;overflow-x: hidden;">
 
+  <div style="background-image:url('img/homepage/carousel1.png');background-size: cover; height: 100vh;">
+
+    <!--== NAVBAR ==-->
+    <div class="d-none d-lg-block">
+      <div class="row py-5">
+        <div class="col-4 text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+            <a style="text-transform: none;font-weight:600;color:#000000;" class="nav-link" href="{% url 'account:signup' %}">Sign Up <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="list-inline-item">
+            <a style="text-transform: none;font-weight:600;background-color: #ffffff;color:#000000;border:1px solid #90CD4A;font-size:16px;" name="" id="" class="d-none d-lg-block btn btn-primary px-3 py-2" href="{% url 'account:logmein' %}" role="button">Login</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <img class="d-none d-lg-block mx-auto" style="height:70px;" src="img/logo2.png" alt="">
+          <img class="d-sm-block d-lg-none" style="height:35px;" src="img/logo2.png" alt="">
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+    </div>
+    <!--=============-->
+
+    <nav style="box-shadow: none !important;" class="d-sm-block d-lg-none px-3 navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-item mt-3 text-dark" href="{% url 'account:logmein' %}">Login</a>
+    <a class="navbar-brand text-center mx-auto" href="#">
+      <img  style="height:43px;" src="img/logo2.png" alt="">
+    </a>
+    </nav>
+
+    <!--== HERO SECTION ==-->
+
+    <div class="text-center mt-lg-5 mt-2 align-self-center">
+      <h1 class="mb-4 mx-lg-2 mx-5">Indian Store &amp; More</h1>
+      <p class="mb-5 mx-lg-2 mx-5 text-success heading1">Delivered free  <span style="color:#29342E;">•</span> Twice-a-week  <span style="color:#29342E;">•</span>  No Min Order</p>
+      <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> Get Started</a>
+    </div>
+
+    <!--===========-->
+  </div>
+
+
+  <!--==HOW IT WORKS==-->
+  <div>
+    <div class="row my-4">
+      <div class="col-md-6 text-center">
+        <img width="75%" ; src="img/homepage/how-it-works.png" alt="">
+        <p class="my-4 mx-auto w-75 font-weight-light text-muted heading2">Hand picked okra + Strauss organic milk + Diapers?
+        <br>You got it!</p>
+      </div>
+
+      <div class="col-md-6 align-self-center">
+        <div class="text-lg-left text-center mx-lg-2 mx-5">
+          <p class="mb-2 text-dark heading1">Let us do the shop hop.
+          </p>
+          <h1 class="mb-4 text-lg-left text-center d-none d-lg-block"><span class="text-success">You get</span> #MoreMeTime </h1>
+          <p class="mb-4 text-lg-left text-center font-weight-light heading2">Let us that do those three way stops for you. Just search across our 1000s of items from your favorite stores in one place. Organic produce to cleaning supplies, <span class="font-weight-bold">we’ve got it all.</span></p>
+          <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> shop now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--=========-->
+
+  <!--==FEATURES==-->
+
+  <div style="background-image:url('img/homepage/carousel2.png');background-size: cover;background-color: #ffffff; " class="d-none d-lg-block py-3  text-center">
+    <h1 class="mb-4 text-center">Glad you asked ! </h1>
+
+    <div class="row my-1 mx-5 text-center">
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Free delivery with no min order? What’s the catch? </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon1.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Our twice-a-week model lets us optimise and deliver free. Try with no risk!</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">No more waste! Those last two bananas will never go black</p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon2.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">With our twice-a-week free delivery and  smart-subscribe, you can order just the right amount.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Lowest price or we pay you. Bold!  </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon3.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Find any item at a lower cost than ours, we will match it and credit you $1 as a courtesy. That’s our challenge.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Quality guaranteed or returns at your doorstep!  </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon4.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Ever feel compromised, we will refund with no questions asked and pick up the item at our next delivery. That’s our promise, for life.</p>
+        </div>
+      </div>
+
+    </div>
+      <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> shop now</a>
+    <p>&nbsp;</p>
+  </div>
+
+
+  <!--==FEATURES - mobile==-->
+  <div style="background-image:url('img/homepage/carousel2m.png');background-size: 100%;background-color: #ffffff; " class="d-sm-block d-lg-none py-3  text-center">
+    <h1 class="mb-4 text-center">Glad you asked ! </h1>
+
+    <div class="row my-1 mx-5 text-center">
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Free delivery with no min order? What’s the catch? </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon1.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Our twice-a-week model lets us optimise and deliver free. Try with no risk!</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">No more waste! Those last two bananas will never go black</p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon2.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">With our twice-a-week free delivery and  smart-subscribe, you can order just the right amount.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Lowest price or we pay you. Bold!  </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon3.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Find any item at a lower cost than ours, we will match it and credit you $1 as a courtesy. That’s our challenge.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="py-5 my-5">
+          <p class="mb-4 text-dark heading1">Quality guaranteed or returns at your doorstep!  </p>
+          <img class="my-4" width="35%"; src="img/homepage/icons/icon4.svg"  alt="">
+          <p class="mt-4 mb-1 text-muted heading2">Ever feel compromised, we will refund with no questions asked and pick up the item at our next delivery. That’s our promise, for life.</p>
+        </div>
+      </div>
+
+    </div>
+      <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> shop now</a>
+    <p>&nbsp;</p>
+
+  </div>
+
+  <!--===========-->
+
+  <!--==WHY DS - mobile==-->
+  <div>
+    <!--==desktop==-->
+    <div class="pt-5 mx-auto w-50 text-center d-none d-lg-block">
+      <h1 class="mb-4"> Why Choose Us ? </h1>
+      <p class="mb-4 heading2" >Try explaining how to pick the best Okra to a non-desi. We are a team of experts dedicated to support the Indian communities. Be it dairy with longest shelf life or picking the best Okra, <span style="font-weight: 600;">we know how to get it right!</span></p>
+      <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> i am in</a>
+    </div>
+    <!--==mobile==-->
+    <div class="pt-5 px-3 w-100 text-center d-sm-block d-lg-none">
+      <h1 class="mb-4"> Why Choose Us ? </h1>
+      <p class="mb-4 heading2">Try explaining how to pick the best Okra to a non-desi. We are a team of experts dedicated to support the Indian communities. Be it dairy with longest shelf life or picking the best Okra, <span style="font-weight: 600;">we know how to get it right!</span></p>
+      <a name="" id="" class="btn btn-primary px-5 h5" href="{% url 'account:signup' %}" role="button"><img height="30px" src="img/homepage/button-logo.svg" /> i am in</a>
+    </div>
+    <img src="img/homepage/pre-footer.svg" width="100%" />
+  </div>
+  <!--===========-->
+
+  <!--==PROMO==-->
+  <div class="row">
+    <div class="col-md-4 border-right align-self-center">
+    </div>
+    <div class="col-md-4 align-self-center text-center">
+      <div class="pt-5 mx-auto w-75 text-center">
+        <h5 class="text-success">SPREAD THE WORD!</h5>
+        <p class="mb-4">If you are not ready to give us a spin today, 
+        we understand. But I’m sure there are a few others in your circles that could use our help. We would appreciate you sharing.	
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 border-left align-self-center">
+    </div>
+  </div>
+  <!--===========-->
+
+  <!--==FOOTER==-->
+
+  <div style="background-color: #29342E;" class="row px-5 py-4 text-white">
+    <div class="col-md-4 p-4">
+      <p class="heading1 text-muted">Connect With </p>
+      <img class="w-50" src="img/homepage/ds-footer-logo.png" alt="">
+      <p class="text-white mt-4 heading2">© 2019 Desi Staple | All rights reserved</p>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-2">
+    </div>
+    <!--contact column-->
+
+    <div class="col-md-2 pr-5 align-self-center pl-lg-2 d-none d-lg-block">
+      <p class="text-white mb-4">Customer Support:<br><a class="text-white" href="#">support@desistaple.com</a> </p>
+    </div>
+
+    <!--contact column - mobile-->
+    <div class="col-md-2 pr-5 align-self-center pl-lg-2 d-sm-block d-lg-none">
+      <ul class="list-group">
+        <a class="list-group-item text-white">Customer Support: support@desistaple.com</a>
+      </ul>      
+    </div>
+
+  </div>
 </body>
+
 </html>

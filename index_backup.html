@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">   
+  <head>
+    <!-- Hotjar Tracking Code for desistaple.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1417730,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    {% load static %}
+    <meta charset="utf-8">   
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="icon" href="img/favicon/favicon_2.png">
+    <title>DesiStaple{% block title_section %}{% endblock %} </title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/chat_style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-kit.css">
+    <link rel="stylesheet" href="css/products_dropdown.css">
+    <link rel="stylesheet" href="css/custom_style.css">
+
+
+    <!-- todo(amit): remove unrequired js files -->
+    <script src="js/core/jquery.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/bootstrap-material-design.min.js"></script>
+    <script src="js/plugins/moment.min.js"></script>
+    <script src="js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/plugins/nouislider.min.js"></script>
+    <script src="js/bootstrap-growl.js"></script>
+
+    {% block script_content %}
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css?1.1">
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js?1.6"></script>
+        <script src="js/material-kit.min.js"></script>
+    {% endblock script_content %}
+
+    {% include 'google_ads.html' %}
+
+  </head>  
+  <style>
+    @font-face {
+      font-family: "Interstate";
+      src: url("/static/new_assets/fonts/Interstate-Light.otf");
+    }
+  </style>
+
+  {% block entire_body %}
+  <body style="font-family: 'Interstate',  Arial, sans-serif;font-weight:300;background-color: #F8F9FA;overflow-x: hidden;">
+    <nav class="navbar fixed-top  navbar-expand-lg bg-white" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" style="padding: 0px 20px 0px" href="/"> <img src="img/logo3.png"  width="260" alt="Logo"> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" data-target="#grihsthimenu" aria-controls="grihsthimenu">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="grihsthimenu">
+            <ul class="navbar-nav">
+              <li>
+                <div class="second-nav">
+                  <ul class="list-unstyled">
+                    <li class="dropdown">
+                      <a href="#" class="text-white bg-primary">Catalogue</a>
+                      <ul class="submenu1 list-unstyled">
+                        <li><a href="#" class="category_hover_color"><div class="badge badge-warning">Special Categories</div></a>
+                          <ul class="submenu1-1 list-unstyled">
+                            <li class="childer-active"><a href="{% url 'products:display_my_product_list">My Products</a>
+                            <li class="childer-active"><a href="{% url 'products:display_popular_list">Popular Products</a>
+                            <li class="childer-active"><a href="{% url 'products:display_new_list">New Products</a>
+                        </ul>
+                        </li>
+
+                        <li><a href="{% url 'products:display_product_tile_dept' department=department|replace_underscore %}" class="category_hover_color">Produce</a>
+                            
+                          <ul class="submenu1-1 list-unstyled">
+                            <li class="childer-active"><a href="{% url 'products:display_product_tile_aisle' department=department|replace_underscore aisle=aisle|replace_underscore %}" class="category_hover_color">Vegetables</a>
+                            <li class="childer-active"><a href="{% url 'products:display_product_tile_aisle' department=department|replace_underscore aisle=aisle|replace_underscore %}" class="category_hover_color">Fruits</a>
+                            <li class="childer-active"><a href="{% url 'products:display_product_tile_aisle' department=department|replace_underscore aisle=aisle|replace_underscore %}" class="category_hover_color">Organic</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li><a href="{% url 'products:display_product_tile_dept' department=department|replace_underscore %}" class="category_hover_color">Snacks</a>
+                            
+                          <ul class="submenu1-1 list-unstyled">
+                            <li class="childer-active"><a href="{% url 'products:display_product_tile_aisle' department=department|replace_underscore aisle=aisle|replace_underscore %}" class="category_hover_color">Haldiram</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                  </ul>
+                </div>
+              </li>
+  
+            </ul>
+            <ul class="navbar-nav ml-auto w-50">
+              <li class="w-100">
+                <form class="form-inline searchform" action="{% url 'products:products_search" id="searchform" name="searchform" method="get">
+                  <span class="border w-75">
+                  <div class="form-group w-100">
+                    <input type="text" class="form-control searchterm ml-1 w-100" placeholder="Search for more than 25,000 products ..." id="searchterm" name="searchterm" >
+                  </div>
+                  </span>
+                  <button type="submit" class="btn btn-fab ml-0 mr-0 mb-1">
+                    <i class="material-icons">search</i>
+                  </button>
+                </form>
+              </li>
+            </ul>
+  
+            <ul class="navbar-nav">
+              <li class="dropdown nav-item">
+                <button class="nav-link border-0" data-toggle="dropdown">Account</button>
+                <div class="dropdown-menu dropdown-with-icons">
+                  <a href="{% url 'account:profile_settings" class="dropdown-item"><i class="material-icons">account_circle</i>Profile Settings</a>
+                  <a href="{% url 'account:password_change" class="dropdown-item"><i class="material-icons">lock</i>Password Change</a>
+                  <a href="{% url 'account:order_settings" class="dropdown-item"><i class="material-icons">format_list_bulleted</i>Order Preferences</a>
+                  <a href="{% url 'account:notification_settings" class="dropdown-item"><i class="material-icons">notifications</i>Notification Preferences</a>
+                  <a href="{% url 'payments:display_payments_page" class="dropdown-item"><i class="material-icons">payment</i>Payment Update</a>
+                  <a href="{% url 'wallet:wallet_balance" class="dropdown-item"><i class="material-icons">card_giftcard</i>Gift Card</a>
+                  <a href="{% url 'account:logmeout" class="dropdown-item"><i class="material-icons">power_settings_new</i>Logout</a>
+                </div>
+              </li>
+
+              <li class="btn-group pl-2 my-0">
+                <button type="button" class="btn btn-primary btn-round p-0 py-1 pl-4 pr-1 text-capitalize font-weight-bold border border-white">
+                  <a href="{% url 'cart:display_cart"><p class="m-0 text-white">My Cart</p></a>
+                  <a href="{% url 'cart:display_cart"><p class="m-0 text-white" id="cart-item-count">10 Items</p></a>
+                </button>
+                <button type="button" class="btn btn-primary dropdown-toggle btn-sm btn-round border border-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a href="{% url 'receipts:display_current_order" class="dropdown-item px-2"><i class="material-icons pr-2">list_alt</i> Placed Order</a>
+                  <a href="{% url 'receipts:past_orders" class="dropdown-item px-2"><i class="material-icons pr-2">fast_rewind</i> Past Orders</a>
+                  <a href="{% url 'promotion:add_promotion_code" class="dropdown-item px-2"><i class="material-icons pr-2">monetization_on</i> Promotion</a>
+                  <a href="{% url 'products:customer_create_new_product" class="dropdown-item px-2"><i class="material-icons pr-2">emoji_objects</i> Suggest a Product</a>
+                  <a href="{% url 'faqs:faqs" class="dropdown-item px-2"><i class="material-icons pr-2">help</i>Help</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+{#    <!-- top nav ends-->#}
+{#    {% include '_credit_card_alert.html#}
+
+
+    {% block body_content %}
+    {% endblock body_content %}
+
+    <div style="position: sticky; bottom: -10px; z-index: 5000;" class="pull-right pb-3 pr-3"><a href="#" data-toggle="modal" data-target="#ContactSupportModal"><i class="text-primary fas fa-envelope fa-2x"></i></a></div>
+
+
+    <footer class="footer ">
+      <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="{% url 'faqs:faqs">
+               Help 
+              </a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#ContactSupportModal">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright pull-right">
+          &copy; 2019, Grihsthi LLC. All rights reserved.
+        </div>
+      </div>
+      <div id="ContactSupportModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ContactSupportLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-info font-weight-bold" id="ContactSupportLabel">Contact Support</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ContactSupportModalBody">
+              <textarea class="form-control border" id="contact-support-message" rows="5" placeholder="Enter the message"></textarea>
+            </div>
+            <div class="modal-footer">
+              <span id="contact_support_div pull-right">
+                <button class="btn btn-primary contact_support">Send</button>
+              </span>
+              <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+
+      </footer>
+
+  </body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123099488-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  {% if user.is_authenticated %}
+        gtag('set', {'user_id':'{{ request.user.username }}'});
+    {% endif %}
+  gtag('config', 'UA-123099488-1');
+
+</script>
+
+<script>
+jQuery(document).ready(function(){
+  
+    jQuery('.submenu1 > li').hover(function() {
+		jQuery(this).addClass('parent-active');
+        jQuery(this).siblings().removeClass('parent-active');
+    });
+	jQuery('.submenu1-1 > li').hover(function() {
+		jQuery(this).addClass('childer-active');
+        jQuery(this).siblings().removeClass('childer-active');
+    });
+
+  // initializing tootip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+  // Preventing all the add buttons to scroll the page up	
+  $(document).on('click', 'a.addbutton', function(e) {e.preventDefault(); return true;});
+
+  // Preventing all the hrefs with # to scroll up
+  $(document).on('click', '[href="#"]', function(e) {e.preventDefault(); return true;});
+
+  $('body').on('click', '.contact_support', function(e) {
+      var message = document.getElementById("contact-support-message").value;
+      $(".ContactSupportModalBody").html('<i class="fas fa-spinner fa-pulse fa-5x"></i>');
+      $.getJSON("{% url 'notifications:contact_customer_support", {message: message}, function(result) { 
+        function message_sent_success() {
+          $('#ContactSupportModal').modal('hide');
+        }
+        $(".ContactSupportModalBody").html('<div class="icon icon-success"><i class="fas fa-check-circle fa-5x"></i></div>');
+        window.setTimeout(message_sent_success, 1000);
+     });
+  });
+
+   $('body').on('keyup input', '.searchterm', function(e) {
+            var term = document.getElementById("searchterm").value;
+            let data = {
+                term: term
+            };
+            $.ajax({
+                url: '/products/prompt_products/',
+                data: data,
+                type: 'GET',
+                 success: function( data ){
+                     $( "#searchterm" ).autocomplete (
+                         {
+                             source: data,
+                             select: function(event, ui) {
+                                $("#searchterm").val(ui.item.search_label);
+                                document.getElementById("searchform" ).submit();
+                             }
+                          });
+     }}
+     );
+   });
+  
+  // Displaying the profiledetails modal.
+  $('#profiledetailsModal').modal({backdrop: false, keyboard: false, show: true});
+  $('#zipcodesModal').modal({backdrop: false, keyboard: false, show: true});
+  $('#orderrateformmodal').modal({backdrop: false, keyboard: false, show: true});
+
+});
+</script>
+
+{% endblock entire_body %}
+
+</html>

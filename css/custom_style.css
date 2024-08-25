@@ -1,0 +1,68 @@
+.category_hover_color:hover {
+  color: limegreen;
+}
+
+hr.style_gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0.75, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+  }
+}
+
+.scrolling-wrapper-flexbox {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+}
+
+.leftsidebarwrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.leftsidebarwrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#leftsidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1031; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; 
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-y: auto;
+
+}
+
+#leftsidebar.active {
+    margin-left: -250px;
+}
+
+@media (max-width: 768px) {
+    #leftsidebar {
+        margin-left: -250px;
+    }
+    #leftsidebar.active {
+        margin-left: 0;
+    }
+}
+
+
